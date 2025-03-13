@@ -7,6 +7,9 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',  // Enables static export for GitHub Pages
+  basePath: process.env.NODE_ENV === 'production' ? '/about-me' : '', // Use your GitHub repository name
+  trailingSlash: true,  // Ensures proper file routing
   eslint: {
     ignoreDuringBuilds: true,
   },

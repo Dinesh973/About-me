@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Github, Linkedin, Mail, MapPin, ExternalLink } from "lucide-react";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -47,17 +48,19 @@ export default function Home() {
         {/* Hero Section */}
         <section className="py-12 md:py-20 flex flex-col items-center text-center">
           <div className="w-32 h-32 rounded-full overflow-hidden mb-6">
-            <img
-              src="/placeholder.svg?height=128&width=128"
-              alt="Dinesh S"
-              className="w-full h-full object-cover"
-            />
+          <Image
+  src="/111720203011.jpg"
+  alt="Dinesh S"
+  width={128}
+  height={128}
+  className="rounded-full object-cover"
+/>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
             Dinesh S
           </h1>
           <h2 className="text-xl md:text-2xl text-muted-foreground mb-6">
-            Software Engineer | Full Stack Developer
+            Software Engineer | Full Stack Developer | Salesforce Developer
           </h2>
           <div className="flex items-center gap-2 text-muted-foreground mb-8">
             <MapPin className="h-4 w-4" />
@@ -74,13 +77,13 @@ export default function Home() {
               </Link>
             </Button>
             <Button variant="outline" size="icon" asChild>
-              <Link href="https://github.com/" target="_blank">
+              <Link href="https://github.com/Dinesh973" target="_blank">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </Link>
             </Button>
             <Button variant="outline" size="icon" asChild>
-              <Link href="mailto:example@email.com">
+              <Link href="mailto:dineshsenthilkumar973@gmail.com">
                 <Mail className="h-5 w-5" />
                 <span className="sr-only">Email</span>
               </Link>
@@ -93,12 +96,13 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-8 text-center">About Me</h2>
           <div className="max-w-3xl mx-auto">
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              I'm a passionate Software Engineer with expertise in full-stack
-              development and salesforce developers. I specialize in building
-              robust web applications using modern technologies and frameworks.
-              With a strong foundation in computer science and a keen eye for
-              detail, I strive to create efficient, scalable, and user-friendly
-              solutions.
+            As a Salesforce Enthusiast and SIH 2022 Winner, I am passionate about leveraging technology to solve real-world challenges. With a strong foundation in Salesforce, Blockchain, Big Data, and Software Development, I am eager to explore opportunities in cloud computing, software engineering, and data analytics.
+
+My technical expertise spans across Salesforce development, React.js, Apex Programming, Java, MongoDB, SQL, and Blockchain, allowing me to build scalable, efficient, and innovative solutions. I have also worked with Big Data Analytics and Spring Framework, enhancing my ability to process and analyze large datasets.
+
+Winning Smart India Hackathon (SIH) 2022 was a key milestone, showcasing my problem-solving skills, teamwork, and ability to develop impactful tech-driven solutions. As I did my Bachelors in Information Technology, I continue to explore new technologies, improve my programming skills, and stay updated with the latest advancements in Salesforce, cloud computing, and software development.
+
+I am actively seeking opportunities where I can apply my skills, contribute to innovative projects, and grow in the fields of Salesforce, software engineering, Full Stack development and data analytics. Let’s connect and discuss how we can collaborate!
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               I'm constantly learning and adapting to new technologies to stay
@@ -109,7 +113,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Experience Section */}
+        {/* Experience Section
         <section id="experience" className="py-12 scroll-mt-20">
           <h2 className="text-3xl font-bold mb-8 text-center">
             Work Experience
@@ -179,7 +183,7 @@ export default function Home() {
               </CardContent>
             </Card>
           </div>
-        </section>
+        </section> */}
 
         {/* Skills Section */}
         <section id="skills" className="py-12 scroll-mt-20">
